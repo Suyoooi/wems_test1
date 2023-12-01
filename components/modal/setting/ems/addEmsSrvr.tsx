@@ -166,7 +166,11 @@ function Modal({
         }
       }
       if (modSrvrInfo.username) setValue("inUserNm", modSrvrInfo.username);
-      if (modSrvrInfo.password) setValue("inPwd", modSrvrInfo.password);
+      // if (modSrvrInfo.password) setValue("inPwd", modSrvrInfo.password);
+      if (modSrvrInfo.pwd_enc) {
+        const decodedPassword = atob(modSrvrInfo.pwd_enc);
+        setValue("inPwd", decodedPassword);
+      }
 
       setPopTitle("Modify EMS Server");
     } else {
