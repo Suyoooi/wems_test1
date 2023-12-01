@@ -1,0 +1,11 @@
+.dark-mode .tabulator-row .tabulator-cell {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 4px;
+  border-right: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: linear-gradient(to right, #75b756, #deefd6);
+}

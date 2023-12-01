@@ -1,0 +1,32 @@
+.tabulator .tabulator-header {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background-color: #f5f7fb;
+  color: #515560;
+  font-family: SpoqaHanSans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.tabulator
+  .tabulator-header
+  .tabulator-col
+  .tabulator-col-content
+  .tabulator-col-sorter {
+  right: 10px;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  border-right: none;
+  background-color: #f5f7fb;
+  padding: 0.45857em 0.78571em;
+}
